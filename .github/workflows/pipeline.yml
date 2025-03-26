@@ -1,0 +1,11 @@
+name: Pipeline
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Test job
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: whoami
+        run: whoami
